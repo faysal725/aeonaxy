@@ -1,5 +1,7 @@
 import React from "react";
-import { ChevronDownIcon } from "@heroicons/react/24/solid";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCheckSquare } from "@fortawesome/free-regular-svg-icons";
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
   return (
@@ -14,7 +16,7 @@ const Navbar = () => {
           <div className="hidden sm:ml-6 sm:flex">
             <div className="relative ml-3">
               <div className="flex items-center space-x-4">
-                <div className="relative">
+                <div className="relative group">
                   <select
                     href="#"
                     className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium outline-none nav-select "
@@ -23,8 +25,7 @@ const Navbar = () => {
                     <option value="1">Product 1</option>
                     <option value="2">Product 2</option>
                   </select>
-
-                  <ChevronDownIcon className="h-4 w-4 absolute top-3 right-0" />
+                  <FontAwesomeIcon icon={faChevronDown} className="absolute top-3 right-1 h-3 w-3" />
                 </div>
 
                 <select
