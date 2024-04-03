@@ -25,15 +25,22 @@ const Navbar = () => {
                     <option value="1">Product 1</option>
                     <option value="2">Product 2</option>
                   </select>
-                  <FontAwesomeIcon icon={faChevronDown} className="absolute top-3 right-1 h-3 w-3" />
+                  <FontAwesomeIcon icon={faChevronDown} className="absolute top-3 right-1 h-3 w-3 " />
                 </div>
 
-                <select
-                  href="#"
-                  className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium outline-none nav-select"
-                >
-                  <option value="1">Docs</option>
-                </select>
+                <div className="relative group">
+                  <select
+                    href="#"
+                    className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium outline-none nav-select "
+                  >
+                    <option value="0">Docs</option>
+                    <option value="1">Doc 1</option>
+                    <option value="2">Doc 2</option>
+                  </select>
+                  <FontAwesomeIcon icon={faChevronDown} className="absolute top-3 right-0 h-3 w-3 " />
+                </div>
+
+
                 <a
                   href="#"
                   className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium"
@@ -56,14 +63,14 @@ const Navbar = () => {
             </div>
           </div>
           <div className="flex items-center">
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center group">
               <a
                 href="#"
                 className="text-gray-700 hover:text-gray-900 px-3 pt-2 rounded-md text-sm font-semibold"
               >
                 LOGIN
               </a>
-              <span className="h-0.5 w-12 border border-red-700/70"></span>
+              <span className="h-0.5 w-12 border border-red-700/70 group-hover:scale-100 scale-0 transition-all duration-200"></span>
             </div>
 
             <a
