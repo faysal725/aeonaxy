@@ -12,7 +12,7 @@ const BlogPost = ({
 }) => {
   return (
     <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 w-full grid grid-cols-1 md:grid-cols-2 gap-10">
-      <section className="rounded-xl overflow-hidden">
+      <section className="rounded-xl overflow-hidden border border-black/20">
         <img src={imgSrc} alt="" className="object-cover" />
       </section>
       <div className="flex flex-col">

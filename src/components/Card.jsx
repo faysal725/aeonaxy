@@ -4,8 +4,8 @@ import AvatarDetails from "./AvatarDetails";
 export default function Card({ data }) {
   return (
     <div className="rounded-2xl overflow-hidden border border-slate-300">
-      <div>
-        <img src={data.imgSrc} alt="" className="object-contain" />
+      <div className="h-72 overflow-hidden ">
+        <img src={data.imgSrc} alt="" className="h-full w-full" />
       </div>
       <div className="p-6">
         <div className="flex items-center mb-4">

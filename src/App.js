@@ -18,15 +18,7 @@ function App() {
         created_at="June 07, 2022"
       />
       <BlogSection />
-      <BlogPost
-        imgSrc="/blogpost/appleSearch.jpg"
-        type="Engineering"
-        title="Introducing our Firebase Extension"
-        description="Firebase developers get plug and play in-app purchase infrastructure"
-        avatarImg="/avatar/Ellipse.png"
-        name="Francie Fernandes"
-        created_at="May 11, 2022"
-      />
+
     </div>
   );
 }

@@ -2,11 +2,12 @@ import React, { useState } from "react";
 import Filter from "../Filter";
 import AvatarDetails from "../AvatarDetails";
 import Card from "../Card";
+import BlogPost from "../BlogPost";
 
 export default function BlogSection() {
   const filters = ["All articles", "Company", "Engineering", "Growth"];
 
-  const allBlogs = [
+  const blogs1 = [
     {
       imgSrc: "/posts/post1.jpg",
       type: "Company",
@@ -63,12 +64,56 @@ export default function BlogSection() {
         created_at: "June 07, 2022",
       },
   ];
+  const blogs2 = [
+    {
+      imgSrc: "/posts/post1.jpg",
+      type: "Company",
+      title: "Meet the New RevenueCat SDK",
+      description: "Our biggest release to date!",
+      avatarImg: "/avatar/Ellipse.png",
+      name: "Andy Boedo",
+      created_at: "June 07, 2022",
+    },
+    {
+      imgSrc: "/posts/post2.jpg",
+      type: "Engineering",
+      title: "Using RevenueCat with Expo's Managed Workflow",
+      description: "The getting started guide",
+      avatarImg: "/avatar/Ellipse3.png",
+      name: "Josh Holtz",
+      created_at: "April 18, 2022",
+    },
+      {
+        imgSrc: "/posts/post1.jpg",
+        type: "Engineering",
+        title: "How we test SDKs at RevesueCat",
+        description: "All about testing and updating our iOS SDK",
+        avatarImg: "/avatar/Ellipse2.png",
+        name: "Andy Boedo",
+        created_at: "May 26, 2022",
+      },
+  ];
   return (
     <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 w-full ">
       <Filter filters={filters} />
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-6">
-        {allBlogs.map((blog, index) => (
+        {blogs1.map((blog, index) => (
+        <Card data={blog} />
+        ))}
+      </div>
+      <BlogPost
+        imgSrc="/blogpost/firebaseExt.jpg"
+        type="Engineering"
+        title="Introducing our Firebase Extension"
+        description="Firebase developers get plug and play in-app purchase infrastructure"
+        avatarImg="/avatar/Ellipse.png"
+        name="Francie Fernandes"
+        created_at="May 11, 2022"
+      />
+
+<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-6">
+        {blogs2.map((blog, index) => (
         <Card data={blog} />
         ))}
       </div>
