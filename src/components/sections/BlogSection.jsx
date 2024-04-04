@@ -3,6 +3,7 @@ import Filter from "../Filter";
 import AvatarDetails from "../AvatarDetails";
 import Card from "../Card";
 import BlogPost from "../BlogPost";
+import Newsletter from "./Newsletter";
 
 export default function BlogSection() {
   const filters = ["All articles", "Company", "Engineering", "Growth"];
@@ -94,10 +95,10 @@ export default function BlogSection() {
     },
   ];
   return (
-    <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 w-full ">
+    <main className="max-w-7xl mx-auto  py-16 w-full ">
       <Filter filters={filters} />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-6 px-4 sm:px-6 lg:px-8">
         {blogs1.map((blog, index) => (
           <Card data={blog} />
         ))}
@@ -112,21 +113,13 @@ export default function BlogSection() {
         created_at="May 11, 2022"
       />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-6 px-4 sm:px-6 lg:px-8">
         {blogs2.map((blog, index) => (
           <Card data={blog} />
         ))}
       </div>
 
-      <div className="flex items-center justify-center gap-5 flex-wrap p-2 py-8 my-10 border border-black ">
-          <div className="text-center">
-          <p className="text-xl md:text-3xl font-bold">Subscribe to our monthly newsletter</p>
-          </div>
-          <div className="flex border border-black p-2  rounded-full gap-x-2  ">
-            <input type="text" placeholder="Your email address..." className="text-black pl-5 outline-none"/>
-            <button className="bg-indigo-500 rounded-full p-2 px-4 uppercase text-white text-xs md:text-base">Subscribe</button>
-          </div>
-      </div>
+      <Newsletter />
     </main>
   );
 }

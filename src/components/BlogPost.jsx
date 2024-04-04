@@ -11,7 +11,7 @@ const BlogPost = ({
   created_at = "June 07, 2022",
 }) => {
   return (
-    <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 w-full grid grid-cols-1 md:grid-cols-2 gap-10">
+    <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8  py-16 w-full grid grid-cols-1 md:grid-cols-2 gap-10">
       <section className="rounded-xl overflow-hidden border border-black/20">
         <img src={imgSrc} alt="" className="object-cover" />
       </section>
@@ -21,7 +21,9 @@ const BlogPost = ({
             type == "Company" ? "text-red-500 border-red-600" : ""
           } ${type == "Growth" ? "text-green-500 border-green-600" : ""} ${
             type == "Engineering" ? "text-indigo-500 border-indigo-600" : ""
-          } ${type == "Latest Post" ? "text-emerald-500 border-emerald-500" : ""}  `}
+          } ${
+            type == "Latest Post" ? "text-emerald-500 border-emerald-500" : ""
+          }  `}
         >
           {type}
         </div>

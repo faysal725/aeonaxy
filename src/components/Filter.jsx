@@ -8,7 +8,7 @@ import { faRss } from "@fortawesome/free-solid-svg-icons";
 export default function Filter({ filters = [] }) {
   const [currentFilter, setCurrentFilter] = useState(0);
   return (
-    <section className="flex justify-between items-center pb-4 flex-wrap gap-5">
+    <section className="flex justify-between items-center pb-4 flex-wrap gap-5 px-4 sm:px-6 lg:px-8">
       <ul className="flex gap-5 items-center flex-wrap">
         {filters.map((filter, index) => (
           <li
