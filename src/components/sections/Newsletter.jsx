@@ -1,8 +1,9 @@
 import React from "react";
+import ButtonLg from "../ButtonLg";
 
 export default function Newsletter() {
   return (
-    <div  className="px-4 sm:px-6 lg:px-8">
+
     
     <div className="flex items-center justify-center gap-5 flex-wrap p-2  py-8 my-10 border  relative overflow-hidden shadow-xl">
       <div className="text-center">
@@ -16,12 +17,10 @@ export default function Newsletter() {
           placeholder="Your email address..."
           className="text-black pl-5 outline-none"
         />
-        <button className="bg-indigo-500 rounded-full p-2 px-4 uppercase text-white text-xs md:text-sm">
-          Subscribe
-        </button>
+        <ButtonLg title="Subscribe" />
       </div>
       <img src="/subscribe/subscribe.png" alt="" className=" absolute -z-10 " />
     </div>
-    </div>
+    
   );
 }

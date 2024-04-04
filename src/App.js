@@ -3,6 +3,7 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import BlogPost from "./components/BlogPost";
 import BlogSection from "./components/sections/BlogSection";
+import SignupSection from "./components/sections/SignupSection";
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
         created_at="June 07, 2022"
       />
       <BlogSection />
-
+      <SignupSection />
     </div>
   );
 }

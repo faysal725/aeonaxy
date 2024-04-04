@@ -3,7 +3,7 @@ import React from "react";
 export default function AvatarDetails({
   imgSrc = "/avatar/Ellipse.png",
   name = "Thomas Petit",
-  created_at = "June 07, 2022",
+  created_at = "",
   classes="text-lg font-semibold"
 }) {
   return (

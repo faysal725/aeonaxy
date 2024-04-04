@@ -4,6 +4,7 @@ import AvatarDetails from "../AvatarDetails";
 import Card from "../Card";
 import BlogPost from "../BlogPost";
 import Newsletter from "./Newsletter";
+import Pagination from "../Pagination";
 
 export default function BlogSection() {
   const filters = ["All articles", "Company", "Engineering", "Growth"];
@@ -103,6 +104,7 @@ export default function BlogSection() {
           <Card data={blog} />
         ))}
       </div>
+
       <BlogPost
         imgSrc="/blogpost/firebaseExt.jpg"
         type="Engineering"
@@ -119,7 +121,20 @@ export default function BlogSection() {
         ))}
       </div>
 
-      <Newsletter />
+      
+      <div  className="px-4 sm:px-6 lg:px-8">
+        <Newsletter />
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-6 px-4 sm:px-6 lg:px-8">
+        {blogs2.map((blog, index) => (
+          <Card data={blog} />
+        ))}
+      </div>
+
+      <div  className="px-4 sm:px-6 lg:px-8">
+        <Pagination />
+      </div>
     </main>
   );
 }
