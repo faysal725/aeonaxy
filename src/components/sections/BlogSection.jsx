@@ -5,6 +5,7 @@ import Card from "../Card";
 import BlogPost from "../BlogPost";
 import Newsletter from "./Newsletter";
 import Pagination from "../Pagination";
+import SpecialCard from "../SpecialCard";
 
 export default function BlogSection() {
   const filters = ["All articles", "Company", "Engineering", "Growth"];
@@ -57,13 +58,11 @@ export default function BlogSection() {
       created_at: "June 07, 2022",
     },
     {
-      imgSrc: "/posts/post1.jpg",
-      type: "Engineering",
-      title: "Here at RevenueCat, Employees are Customers Too",
-      description: "Sharing app building ideas in our Employee App Club",
-      avatarImg: "/avatar/Ellipse.png",
-      name: "Thomas Petit",
-      created_at: "June 07, 2022",
+      imgSrc: "/posts/subclub.png",
+      type: "Special",
+      title: "The Sub Club Podcast",
+      description:
+        "Interviews and deep dives with the experts behind the biggest apps in the world.",
     },
   ];
   const blogs2 = [
@@ -100,9 +99,16 @@ export default function BlogSection() {
       <Filter filters={filters} />
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-6 px-4 sm:px-6 lg:px-8">
-        {blogs1.map((blog, index) => (
+        {/* {blogs1.map((blog, index) => (
           <Card data={blog} />
-        ))}
+        ))} */}
+        {blogs1.map((blog, index) =>
+          blog.type === "Special" ? (
+            <SpecialCard data={blog} />
+          ) : (
+            <Card data={blog} />
+          )
+        )}
       </div>
 
       <BlogPost
@@ -121,8 +127,7 @@ export default function BlogSection() {
         ))}
       </div>
 
-      
-      <div  className="px-4 sm:px-6 lg:px-8">
+      <div className="px-4 sm:px-6 lg:px-8">
         <Newsletter />
       </div>
 
@@ -132,7 +137,7 @@ export default function BlogSection() {
         ))}
       </div>
 
-      <div  className="px-4 sm:px-6 lg:px-8">
+      <div className="px-4 sm:px-6 lg:px-8">
         <Pagination />
       </div>
     </main>
