@@ -14,9 +14,6 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
-            {/* <a href="/" className="text-red-600 font-bold text-xl">
-              RevenueCat
-            </a> */}
             <img src="/logo.png" alt="" className="h-10 w-40" />
           </div>
           <div className="hidden sm:ml-6 lg:flex">
@@ -126,7 +123,6 @@ const Navbar = () => {
                   Pricing
                 </p>
               </li>
-
 
               <li className="md:mt-20">
                 <a
