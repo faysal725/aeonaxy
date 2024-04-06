@@ -9,9 +9,10 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
-            <a href="/" className="text-red-600 font-bold text-xl">
+            {/* <a href="/" className="text-red-600 font-bold text-xl">
               RevenueCat
-            </a>
+            </a> */}
+            <img src="/logo.png" alt="" className="h-10 w-40"/>
           </div>
           <div className="hidden sm:ml-6 sm:flex">
             <div className="relative ml-3">

@@ -4,6 +4,8 @@ import Navbar from "./components/Navbar";
 import BlogPost from "./components/BlogPost";
 import BlogSection from "./components/sections/BlogSection";
 import SignupSection from "./components/sections/SignupSection";
+import Footer from "./components/Footer";
+
 
 function App() {
   return (
@@ -20,6 +22,7 @@ function App() {
       />
       <BlogSection />
       <SignupSection />
+      <Footer />
     </div>
   );
 }
