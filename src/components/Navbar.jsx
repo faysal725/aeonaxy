@@ -106,22 +106,22 @@ const Navbar = () => {
         >
           <div className="relative   flex justify-center items-center w-full h-full">
             <ul className=" -mt-28 flex flex-col gap-10">
-              <li className="flex justify-center">
+              <li className="flex justify-center cursor-pointer">
                 <p className="text-white text-2xl md:text-4xl border-b-4 border-b-red-400 w-fit">
                   Products
                 </p>
               </li>
-              <li className="flex justify-center">
+              <li className="flex justify-center cursor-pointer">
                 <p className="text-white text-2xl md:text-4xl border-b-4 border-b-red-400 w-fit">
                   Docs
                 </p>
               </li>
-              <li className="flex justify-center">
+              <li className="flex justify-center cursor-pointer">
                 <p className="text-white text-2xl md:text-4xl border-b-4 border-b-red-400 w-fit">
                   Customers
                 </p>
               </li>
-              <li className="flex justify-center">
+              <li className="flex justify-center cursor-pointer">
                 <p className="text-white text-2xl md:text-4xl border-b-4 border-b-red-400 w-fit">
                   Pricing
                 </p>

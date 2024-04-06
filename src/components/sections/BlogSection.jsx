@@ -22,7 +22,7 @@ export default function BlogSection() {
     },
 
     {
-      imgSrc: "/posts/post1.jpg",
+      imgSrc: "/posts/post3.jpg",
       type: "Growth",
       title: "App Store Optimization Guide for Subscription Apps",
       description: "Learn how to boost your app's visibility and more",
@@ -31,31 +31,31 @@ export default function BlogSection() {
       created_at: "May 30, 2022",
     },
     {
-      imgSrc: "/posts/post1.jpg",
+      imgSrc: "/posts/post4.jpg",
       type: "Engineering",
       title: "Account deletion rules on the App Store",
       description: "Everything you need to know about the new rule",
       avatarImg: "/avatar/Ellipse.png",
-      name: "Corey Rabazinski</div>",
+      name: "Corey Rabazinski",
       created_at: "May 26, 2022",
     },
     {
-      imgSrc: "/posts/post1.jpg",
+      imgSrc: "/posts/post5.jpg",
       type: "Company",
-      title: "Here at RevenueCat, Employees are Customers Too",
-      description: "Sharing app building ideas in our Employee App Club",
-      avatarImg: "/avatar/Ellipse.png",
-      name: "Thomas Petit",
-      created_at: "June 07, 2022",
+      title: "How We Work Remotely at RevenueCat",
+      description: "We're a little different than your average 9-5 job",
+      avatarImg: "/avatar/Ellipse2.png",
+      name: "Rechel Wright",
+      created_at: "May 07, 2022",
     },
     {
-      imgSrc: "/posts/post1.jpg",
+      imgSrc: "/posts/post6.jpg",
       type: "Engineering",
-      title: "Here at RevenueCat, Employees are Customers Too",
-      description: "Sharing app building ideas in our Employee App Club",
-      avatarImg: "/avatar/Ellipse.png",
-      name: "Thomas Petit",
-      created_at: "June 07, 2022",
+      title: "Google I/O 2022 Announcements",
+      description: "How the new features and updated Play Console will help grow your app business",
+      avatarImg: "/avatar/Ellipse3.png",
+      name: "Maddie Beyl",
+      created_at: "May 07, 2022",
     },
     {
       imgSrc: "/posts/subclub.png",
@@ -85,13 +85,42 @@ export default function BlogSection() {
       created_at: "April 18, 2022",
     },
     {
-      imgSrc: "/posts/post1.jpg",
+      imgSrc: "/posts/post7.png",
       type: "Engineering",
       title: "How we test SDKs at RevesueCat",
       description: "All about testing and updating our iOS SDK",
       avatarImg: "/avatar/Ellipse2.png",
       name: "Andy Boedo",
       created_at: "May 26, 2022",
+    },
+  ];
+  const blogs3 = [
+    {
+      imgSrc: "/posts/post9.jpg",
+      type: "Growth",
+      title: "Early Stage Subscription App Growth Stack",
+      description: "A scaled-down 'MVP' of the mobile growth stack to help mobile developers get started",
+      avatarImg: "/avatar/Ellipse.png",
+      name: "Andy Boedo",
+      created_at: "June 07, 2022",
+    },
+    {
+      imgSrc: "/posts/post2.jpg",
+      type: "Growth",
+      title: "How all Trails Leveraged Product Channel fit To Scale its Subscription",
+      description: "Growth and investment takeways from a profitable app",
+      avatarImg: "/avatar/Ellipse3.png",
+      name: "Josh Holtz",
+      created_at: "April 18, 2022",
+    },
+    {
+      imgSrc: "/posts/post10.jpg",
+      type: "Engineering",
+      title: "Hybrid SDK Achitecture at RevenueCat",
+      description: "Adding a layer to reduce complexity.",
+      avatarImg: "/avatar/Ellipse2.png",
+      name: "Maddie Beyl",
+      created_at: "March 15, 2023",
     },
   ];
   return (
@@ -132,7 +161,7 @@ export default function BlogSection() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-6 px-4 sm:px-6 lg:px-8">
-        {blogs2.map((blog, index) => (
+        {blogs3.map((blog, index) => (
           <Card data={blog} />
         ))}
       </div>
